@@ -1,0 +1,27 @@
+{
+  "parent": "digitech:digitech/phone",
+  "display": {
+    "icon": {
+      "id": "digitech:blue_case",
+      "count": 1
+    },
+    "title": "A different style",
+    "description": "You have a new phone case to change the style of your phone.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_microchip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": ["digitech:cases"]
+          }
+        ]
+      }
+    }
+  }
+}

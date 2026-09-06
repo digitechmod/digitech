@@ -1,0 +1,13 @@
+{
+  "parent": "item/generated",
+  "textures": { "layer0": "digitech:item/phone" },
+  "overrides": [
+    {"predicate": { "digitech:phone_case": 1 }, "model": "digitech:item/red_phone" },
+    {"predicate": { "digitech:phone_case": 2 }, "model": "digitech:item/blue_phone" },
+    {"predicate": {"digitech:phone_case": 3}, "model": "digitech:item/green_phone"},
+    {"predicate": {"digitech:phone_case": 4}, "model": "digitech:item/pink_phone"},
+    {"predicate": {"digitech:phone_case": 5}, "model": "digitech:item/yellow_phone"},
+    {"predicate": {"digitech:phone_case": 6}, "model": "digitech:item/orange_phone"}
+  ]
+}
+

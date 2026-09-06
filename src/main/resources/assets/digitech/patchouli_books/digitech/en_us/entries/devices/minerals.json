@@ -1,0 +1,24 @@
+{
+  "name": "Minerals",
+  "icon": "minecraft:diamond_pickaxe",
+  "category": "digitech:devices",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Hello! You might be thinking about how do you get the phone, the computer and all that Digitech stuff (on Minecraft ;) Before anything else, you would need two new minerals of this mod: plastic and microchip."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Plastic can be found in high layers and mined with a stone pickaxe, and it's awesomely common; while microchips appear between layers -20 and -64 and require an iron pickaxe. These minerals are essential for crafting most Digitech items and blocks, so getting them is your first step into the tech world!"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["digitech:textures/gui/minerals.png"]
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "digitech:microchip_block",
+      "text": "I let you here the recipe of a microchip block (for filling space ;)"
+    }
+  ]
+}

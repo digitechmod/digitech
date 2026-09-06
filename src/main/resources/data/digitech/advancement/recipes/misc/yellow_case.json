@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_phone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "digitech:phone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "digitech:yellow_case"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_phone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "digitech:yellow_case"
+    ]
+  }
+}

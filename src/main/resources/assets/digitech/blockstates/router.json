@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "digitech:block/router_block" },
+    "facing=south": { "model": "digitech:block/router_block", "y": 180 },
+    "facing=west":  { "model": "digitech:block/router_block", "y": 270 },
+    "facing=east":  { "model": "digitech:block/router_block", "y": 90 }
+  }
+}

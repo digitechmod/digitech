@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "B": {
+      "item": "digitech:microchip"
+    },
+    "C": {
+      "item": "minecraft:glass"
+    },
+    "P": {
+      "item": "digitech:plastic"
+    }
+  },
+  "pattern": [
+    "CBC",
+    "BBB",
+    "PBP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "digitech:phone"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "digitech:digitech_poi",
+      "required": false
+    }
+  ]
+}

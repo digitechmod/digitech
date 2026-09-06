@@ -1,0 +1,16 @@
+{
+  "name": "IT Technician",
+  "icon": "minecraft:emerald",
+  "category": "digitech:devices",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Currently Digitech has added a new villager profesion to your Minecraft world, called the IT Technician. It cannot appear naturally on your minecraft world, but you can craft an IT workspace and giving manually the proffesion to the villager. He can sell you many microchips, plastics and old gadgets to use, obviously in exchange of a valuable mineral: emeralds."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "digitech:it_workspace",
+      "text": "Recipe for the IT Workspace."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "digitech:block/pc"},
+    "facing=south": { "model": "digitech:block/pc", "y": 180},
+    "facing=east":  { "model": "digitech:block/pc", "y": 90 },
+    "facing=west":  { "model": "digitech:block/pc", "y": 270 }
+  }
+}

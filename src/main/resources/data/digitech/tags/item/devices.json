@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "digitech:phone",
+    "digitech:computer",
+    "digitech:camera",
+    "digitech:router"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Digitech Guide",
+  "landing_text": "Welcome to Digitech",
+  "version": 1,
+  "creative_tab": "digitech:digitech_tab",
+  "book_item": "minecraft:writable_book",
+  "use_resource_pack": true
+}

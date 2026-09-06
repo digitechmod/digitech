@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "M": {
+      "item": "digitech:microchip"
+    },
+    "P": {
+      "item": "digitech:plastic"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "PDP",
+    "MMM",
+    "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "digitech:computer"
+  }
+}

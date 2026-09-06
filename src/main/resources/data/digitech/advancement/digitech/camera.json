@@ -1,0 +1,27 @@
+{
+  "parent": "digitech:digitech/phone",
+  "display": {
+    "icon": {
+      "id": "digitech:camera",
+      "count": 1
+    },
+    "title": "Do you want a photo?",
+    "description": "You have a new camera to make photos to you and your friends in Minecraft.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_microchip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["digitech:camera"]
+          }
+        ]
+      }
+    }
+  }
+}

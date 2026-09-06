@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:red_dye"
+    },
+    "P": {
+      "item": "digitech:plastic"
+    }
+  },
+  "pattern": [
+    " DP",
+    " DP",
+    " DP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "digitech:red_case"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "digitech:digitech/microchip",
+  "display": {
+    "icon": {
+      "id": "digitech:phone",
+      "count": 1
+    },
+    "title": "The first phone",
+    "description": "You have obtained a phone, who allows you to use different util apps into the game.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_microchip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["digitech:phone"]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "digitech:digitech/root",
+  "display": {
+    "icon": {
+      "id": "digitech:microchip",
+      "count": 1
+    },
+    "title": "Microchip",
+    "description": "You have obtained your first microchip, the most important mineral in the mod.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_microchip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["digitech:microchip"]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Craftings",
+  "icon": "minecraft:crafting_table",
+  "category": "digitech:devices",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "digitech:computer",
+      "text": "Recipe for the computer."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "digitech:phone",
+      "text": "Recipe for the phone."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "digitech:camera",
+      "text": "Recipe for the camera."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "digitech:blue_case",
+      "text": "Recipe for cases (You can replace the blue dye with other dyes to have cases of other colours)."
+    }
+  ]
+}

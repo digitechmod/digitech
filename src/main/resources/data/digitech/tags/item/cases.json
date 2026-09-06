@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "digitech:red_case",
+    "digitech:blue_case",
+    "digitech:green_case",
+    "digitech:pink_case",
+    "digitech:yellow_case",
+    "digitech:orange_case"
+  ]
+}

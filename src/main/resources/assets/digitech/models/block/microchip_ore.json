@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "digitech:block/microchip_ore",
+    "particle": "digitech:block/microchip_ore"
+  }
+}

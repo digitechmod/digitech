@@ -1,0 +1,27 @@
+{
+  "parent": "digitech:digitech/root",
+  "display": {
+    "icon": {
+      "id": "digitech:plastic",
+      "count": 1
+    },
+    "title": "Like coal, but not",
+    "description": "You have obtained your first pieces of plastic",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_microchip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["digitech:plastic"]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "M": {
+      "item": "digitech:microchip"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "MMM",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "digitech:it_workspace"
+  }
+}
