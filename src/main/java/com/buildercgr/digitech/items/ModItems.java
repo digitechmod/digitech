@@ -66,8 +66,4 @@ public class ModItems{
     public static final DeferredItem<Item> PENDRIVE = ITEMS.register(
             "pendrive", () -> new pendrive(new Item.Properties().stacksTo(1))
     );
-
-    public static final DeferredItem<Item> PHOTO = ITEMS.registerItem("photo",
-            Item::new,
-            new Item.Properties().stacksTo(1));
 }
