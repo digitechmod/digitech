@@ -41,8 +41,7 @@ object DigitechResourcepackGenerator {
                         .forEach { p ->
                             val target = texturesDir.resolve(p.fileName)
                             copySafe(p, target)
-                            val targetItem = photoTextureDir.resolve(p.fileName)
-                            copySafe(p, targetItem)
+                            
                         }
                 }
             }
