@@ -20,6 +20,5 @@
   "entity.minecraft.villager.digitech.it_technician": "IT Technician",
   "block.digitech.it_workspace": "IT Workspace",
   "item.digitech.camera": "Camera",
-  "item.digitech.pendrive": "Pendrive",
-  "item.digitech.photo": "Photo"
+  "item.digitech.pendrive": "Pendrive"
 }
