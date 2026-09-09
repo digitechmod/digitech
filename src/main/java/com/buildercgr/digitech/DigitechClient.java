@@ -39,19 +39,9 @@ public class DigitechClient {
                     });
         }
 
-        public static void init_photos(){
-        ItemProperties.register(ModItems.PHOTO.get(),
-                ResourceLocation.fromNamespaceAndPath("digitech", "photo_id"),
-                ((stack, level, entity, seed) -> {
-                    Integer value = stack.get(ModDataComponents.PHOTO_ID.get());
-                    return value == null ? 0.0F: (float) value;
-                }));
-        }
-
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(DigitechClient::init_cases);
-        event.enqueueWork(DigitechClient::init_photos);
         try {
             Path dir = FMLPaths.CONFIGDIR.get()
                     .resolve("digitech")
