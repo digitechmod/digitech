@@ -28,21 +28,7 @@ object DigitechResourcepackGenerator {
                 .resolve("gui")
                 .resolve(cameraID)
 
-            val photoModelDir = resourcepackDir
-                .resolve("assets")
-                .resolve("digitech")
-                .resolve("models")
-                .resolve("item")
-
-            val photoTextureDir = resourcepackDir
-                .resolve("assets")
-                .resolve("digitech")
-                .resolve("textures")
-                .resolve("item")
-
             Files.createDirectories(texturesDir)
-            Files.createDirectories(photoModelDir)
-            Files.createDirectories(photoTextureDir)
 
             val sourceDir = FMLPaths.CONFIGDIR.get()
                 .resolve("digitech")
@@ -70,11 +56,6 @@ object DigitechResourcepackGenerator {
         try {
             val minecraftDir = FMLPaths.GAMEDIR.get()
             val resourcepackDir = minecraftDir.resolve("resourcepacks").resolve(DYNAMIC_PACK_NAME)
-            val photoModelDir = resourcepackDir
-                .resolve("assets")
-                .resolve("digitech")
-                .resolve("models")
-                .resolve("item")
 
             val texturesDir = resourcepackDir
                 .resolve("assets")
@@ -84,7 +65,7 @@ object DigitechResourcepackGenerator {
 
             copyPackMcmeta(resourcepackDir)
             Files.createDirectories(texturesDir)
-            copyPhotoModel(photoModelDir)
+        
         } catch (problem: IOException) {
             problem.printStackTrace()
         }
@@ -102,21 +83,6 @@ object DigitechResourcepackGenerator {
             return
         }
 
-        input.use {
-            Files.copy(it, target)
-        }
-    }
-
-    private fun copyPhotoModel(file: Path) {
-        Files.createDirectories(file)
-        val target = file.resolve("photo.json")
-        if (Files.exists(target)) return
-
-        val input = javaClass.classLoader.getResourceAsStream("pack_templates/photo.json")
-        if (input == null) {
-            Digitech.LOGGER.error("photo model template not found! Perhaps it's a development error, let me know on Discord")
-            return
-        }
         input.use {
             Files.copy(it, target)
         }
