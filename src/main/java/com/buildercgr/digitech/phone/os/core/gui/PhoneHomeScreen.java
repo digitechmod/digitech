@@ -41,8 +41,6 @@ public class PhoneHomeScreen extends ConcurrentPhoneScreen {
         super.init();
 
         this.installedApps = new ArrayList<>(PhoneAppsAPI.getInstalledApps());
-
-        // Crear widgets de iconos
         for (int i = 0; i < 8 && i < installedApps.size(); i++) {
             PhoneApps app = installedApps.get(i);
             int x = APP_SLOTS[i][0];
@@ -59,12 +57,8 @@ public class PhoneHomeScreen extends ConcurrentPhoneScreen {
     @Override
     protected void renderInsidePhone(GuiGraphics gui, int mouseX, int mouseY, float partialTick) {
         super.renderInsidePhone(gui, mouseX, mouseY, partialTick);
-
-        // Dibujar nombre de usuario
         String user = getUserName();
         gui.drawCenteredString(font, user, GUI_W / 2, 12, 0xFFFFFF);
-
-        // Dibujar nombres de apps
         for (int i = 0; i < 8 && i < installedApps.size(); i++) {
             PhoneApps app = installedApps.get(i);
             int x = APP_SLOTS[i][0];
