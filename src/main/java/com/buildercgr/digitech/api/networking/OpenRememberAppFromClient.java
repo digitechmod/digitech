@@ -6,9 +6,9 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
 
-public class OpenAppFromClient {
+public class OpenRememberAppFromClient {
     public record Open_APP(String id) implements CustomPacketPayload {
-        public static final CustomPacketPayload.Type<Open_APP> TYPE = new CustomPacketPayload.Type<>(ResourceLocation.fromNamespaceAndPath("digitech", "init_device"));
+        public static final CustomPacketPayload.Type<Open_APP> TYPE = new CustomPacketPayload.Type<>(ResourceLocation.fromNamespaceAndPath("digitech", "open_remember_app"));
 
         public static final StreamCodec<ByteBuf, Open_APP> STREAM_CODEC = StreamCodec.composite(
                 ByteBufCodecs.STRING_UTF8,

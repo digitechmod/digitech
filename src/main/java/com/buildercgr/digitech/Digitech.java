@@ -1,6 +1,7 @@
 package com.buildercgr.digitech;
 
 import com.buildercgr.digitech.api.networking.ApiPayloadHandler;
+import com.buildercgr.digitech.api.networking.OpenRememberAppFromClient;
 import com.buildercgr.digitech.api.networking.SendInitFromClient;
 import com.buildercgr.digitech.blocks.ModBlocks;
 import com.buildercgr.digitech.phone.apps.ModPhoneApps;
@@ -38,6 +39,12 @@ public class Digitech {
         registrar.playToClient(
                 SendInitFromClient.InitDevice.TYPE,
                 SendInitFromClient.InitDevice.STREAM_CODEC,
+                ApiPayloadHandler::handleDataOnMain
+        );
+
+        registrar.playToClient(
+                OpenRememberAppFromClient.Open_APP.TYPE,
+                OpenRememberAppFromClient.Open_APP.STREAM_CODEC,
                 ApiPayloadHandler::handleDataOnMain
         );
     }

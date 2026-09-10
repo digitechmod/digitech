@@ -4,6 +4,7 @@ import com.buildercgr.digitech.camera.event.CapturePhotoEvent;
 import com.buildercgr.digitech.items.ModItems;
 import com.buildercgr.digitech.dataComponents.ModDataComponents;
 import com.buildercgr.digitech.phone.apps.ModPhoneApps;
+import com.buildercgr.digitech.phone.apps.ModPhoneAppsClient;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
@@ -41,6 +42,7 @@ public class DigitechClient {
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
+        ModPhoneAppsClient.initClient();
         event.enqueueWork(DigitechClient::init_cases);
         try {
             Path dir = FMLPaths.CONFIGDIR.get()
