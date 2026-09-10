@@ -20,8 +20,6 @@ public class ModBlocks {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(Digitech.MODID);
 
-
-    // Microchip Block
     public static final DeferredBlock<Block> MICROCHIP_BLOCK =
             BLOCKS.registerSimpleBlock("microchip_block",
                     BlockBehaviour.Properties.of()
@@ -33,7 +31,6 @@ public class ModBlocks {
     public static final DeferredItem<BlockItem> MICROCHIP_BLOCK_ITEM =
             ITEMS.registerSimpleBlockItem("microchip_block", MICROCHIP_BLOCK);
 
-    // Plastic Block
     public static final DeferredBlock<Block> PLASTIC_BLOCK =
             BLOCKS.registerSimpleBlock("plastic_block",
                     BlockBehaviour.Properties.of()
@@ -45,7 +42,6 @@ public class ModBlocks {
     public static final DeferredItem<BlockItem> PLASTIC_BLOCK_ITEM =
             ITEMS.registerSimpleBlockItem("plastic_block", PLASTIC_BLOCK);
 
-    // Microchip Ore Block
     public static final DeferredBlock<Block> MICROCHIP_ORE =
             BLOCKS.registerSimpleBlock("microchip_ore",
                     BlockBehaviour.Properties.of()
@@ -57,8 +53,7 @@ public class ModBlocks {
 
     public static final DeferredItem<BlockItem> MICROCHIP_ORE_ITEM =
             ITEMS.registerSimpleBlockItem("microchip_ore", MICROCHIP_ORE);
-
-    // Plastic Ore Block
+    
     public static final DeferredBlock<Block> PLASTIC_ORE =
             BLOCKS.registerSimpleBlock("plastic_ore",
                     BlockBehaviour.Properties.of()
