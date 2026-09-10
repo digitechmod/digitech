@@ -48,8 +48,6 @@ public class PhoneTextBox extends PhoneWidget {
     @Override
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
         if (!focused) return false;
-
-        // Backspace
         if (keyCode == GLFW.GLFW_KEY_BACKSPACE) {
             if (!value.isEmpty()) {
                 value = value.substring(0, value.length() - 1);
